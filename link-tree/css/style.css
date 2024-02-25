@@ -1,0 +1,63 @@
+body {
+    color: white;
+    background: url("../img/fondo.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    max-width: 540px
+  }
+  
+  .links-container {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .links-container a {
+    width: 80%;
+  }
+  
+  .w3-theme-l1:hover {
+    background-color: #f4da15 !important;
+  }
+  
+  .margin-top-2 {
+    margin-top: 32px;
+  }
+  
+  .bottom {
+    width: 100%;
+    text-align: center;
+    width: auto;
+    font-weight: bolder;
+  }
+  
+  .bottom span {
+    color: #ed4d82;
+  }
+  
+  .bottom svg {
+    stroke: #ed4d82;
+    fill: #ed4d82;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+        margin-top: 250px;
+      }
+    .link {
+      width: 100%;
+    }
+  }

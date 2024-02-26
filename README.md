@@ -20,7 +20,7 @@ Posteriormente a medida que avancemos con la cursada solo tendrías que mantener
 
 ```bash
 # Ubicados dentro del directorio del repositorio por ejemplo 
-# /directorio_descarga/CAC-23319-Django-MaterialClases
+# /directorio_descarga/CAC-24180-Python-MaterialClases
 git pull
 ```
 - Si no tienes instalado Git, puedes descargar el repositorio comprimido.

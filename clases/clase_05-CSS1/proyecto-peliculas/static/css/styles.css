@@ -1,0 +1,43 @@
+/* selector universal */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* REGLA
+        selector {
+            propiedad1: valor;
+            propiedad2: valor;
+            .....
+            propiedadn: valor;
+        } */
+
+
+/* selector por elemento   */
+h2 {
+    color: green;
+}
+
+h1 {
+    color: cyan;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* selector por id */
+#banner {
+    /* background-color: blue; */
+    background-image: url("../img/banner-bg.jpg");
+    background-size: cover;
+    height: 60vw;
+}
+
+
+/* selector por clase */
+.primer-clase {
+    color:chartreuse;
+    font-size: 32px;
+}

@@ -1,0 +1,215 @@
+:root {
+/* Variables de css */
+    --bg-color:#181419;
+    --bg-input-color: #4f31572c;
+    --primary-color:#9f3647;
+    --secondary-color:#ffc098;
+    --third-color:#db4648;
+    --color: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--color);
+    font-size: 24px;
+    font-family: 'Nunito', Georgia;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color);
+    font-size: 1rem;
+}
+
+header {
+    position: fixed;
+    /* la ser fixed y nos er static pierde el valor de width al 100% que viene por defectoo */
+    width: 100%;
+    z-index: 9999;
+
+}
+
+#logo {
+    /* border: 2px solid red; */
+    font-weight: bold;
+}
+
+
+
+
+.btn-primary{
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    color:#FFF;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    color:var(--secondary-color);
+    border-color: var(--secondary-color);
+    /* transition: all 1s ease; */
+
+}
+
+.comision {
+    background-color: blue;
+    position: fixed;
+    width: 150px;
+    text-align: center;
+    top: 20px;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+/* selector por id */
+#banner {
+    background-image: url("../img/banner-bg.jpg"); /* Establece la imagen de fondo del elemento con el ID 'banner', especificada por la URL */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir completamente el área del elemento, manteniendo su relación de aspecto */
+    height: 300px; /* Establece la altura del elemento con el ID 'banner' al 60% del ancho de la ventana gráfica */
+    background-position: center;
+}
+
+#search {
+    position: sticky;
+    top: 0;
+}
+
+/* implemento clase  */
+.search-container {
+
+    border: 2px solid red;
+    padding: 10px 2px;
+    /* margin: 30px 0; */
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    
+}
+.search-container h2 {
+    text-align: center;
+}
+.search-container h2 span {
+    padding-left: 10px;
+}
+
+.search-container input {
+    background-color: var(--bg-input-color);
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: var(--color);
+    border: 2px solid var(--color);
+    padding-left: 10px;
+}
+
+footer {
+    background-color: var(--third-color);
+}
+footer a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--color);
+
+}
+
+/* pseudoclases */
+/* Estilo para cada enlace en el pie de página */
+
+footer a:first-child {
+    background-color: rgb(122, 122, 202);
+    color: red;
+}
+
+footer a:nth-child(3) {
+    color: yellowgreen;
+}
+
+
+
+/* 
+Transformacion
+selector {
+    transform: funcion1 funcion2 funcionn;
+} 
+*/
+
+/* 
+Transicion
+selector {
+    transition: propiedad duración efecto retraso;
+} 
+
+selector: El selector CSS al que se aplicará la transición.
+propiedad: La propiedad CSS que se animará durante la transición. all para todas
+duración: La duración de la transición, especificada en segundos (s) o milisegundos (ms).
+efecto (opcional): El tipo de efecto de transición que se aplicará, como ease, linear, ease-in, ease-out, ease-in-out, etc.
+retraso (opcional): Un período opcional de tiempo antes de que comience la transición, especificado en segundos (s) o milisegundos (ms).
+*/
+
+/* Animaciones 
+
+Las animaciones CSS se definen utilizando la regla @keyframes, que especifica cómo debe cambiar un elemento durante la animación a través de diferentes puntos en el tiempo. Luego, esta animación se aplica a un elemento HTML mediante la propiedad animation
+
+De la presentacion:
+ animation: <name> <duration> <timing-function> <delay>
+    <iteration-count> <direction> <fill-mode> <play-state> 
+animation: changeColor 5s linear 0.5s 4 normal forwards running;
+
+*/
+
+#logo {
+    /* border: 2px solid yellowgreen; */
+    width: fit-content;
+}
+#logo:hover {
+    animation: movimiento-logo 0.25s infinite;
+}
+/* creamos el fotograma */
+@keyframes movimiento-logo {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+
+/* 
+Las Media Queries en CSS son reglas que nos permiten aplicar estilos específicos a un documento dependiendo de las características del dispositivo en el que se visualiza, como el tamaño de la pantalla, la orientación, la resolución, entre otros.
+*/
+
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    h1{
+        font-size: 3vw;
+    }
+    #banner{
+        height: 400px;
+    }
+    #search{
+        height: 200px;
+    }
+    #logo {
+        display: none;
+    }
+}
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+    .search-container input {
+        background-color: #9f3647;
+    }
+
+    .logo-text {
+        /* visibility: hidden; */
+        display: none;
+    }
+}

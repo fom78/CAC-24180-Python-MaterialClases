@@ -1,0 +1,25 @@
+Tareas para realizar colaborativamente
+
+Header
+- H01 centrar correctamente elementos (Logo y boton) 
+- H02 Implementar enlace de tendencia a donde corresponde. 
+
+Main
+- M01 Dejar implementado las leyendas, bien centradas.
+- M02 En la seccion de search mejorar un poco lo visual
+- M03 Dejar todas las peliculas con el formato correcto (como estan las primeras) y colocar leyendas acorde cuando se brinda la informacion de la peli.
+
+Footer
+- F01 eliminar colores de los links que estan demas.
+
+Detail Movie
+- D01 Colocar la barra de navegacion que se encuantra mejorada en el index.
+- D02 Quitar bordes en detalles e implementar una publicidad, que sea una imagen random de fondo y una leyenda bien centrada.
+- D03 Estilar la seccion del trailer
+- D04 implementar el footer siguiendo el del index.
+
+
+
+
+ 
+

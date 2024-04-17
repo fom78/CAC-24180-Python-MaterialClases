@@ -1,0 +1,74 @@
+:root {
+    /* Variables de css */
+        --bg-color:#181419;
+        --bg-input-color: #4f31572c;
+        --primary-color:#9f3647;
+        --secondary-color:#ffc098;
+        --third-color:#db4648;
+        --color: #fff;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: var(--bg-color);
+        color: var(--color);
+        font-size: 24px;
+        font-family: 'Nunito', Georgia;
+    }
+    
+    a {
+        text-decoration: none;
+        color: var(--color);
+        font-size: 1rem;
+    }
+/* Estilos para el encabezado */
+header {
+    background-color: var(--third-color);
+    padding: 20px; /* Espaciado interno */
+    position: fixed; /* Fijar el encabezado en la parte superior */
+    width: 100%; /* Ajustar el ancho al 100% */
+  top: 0; /* Colocar el encabezado en la parte superior */
+  }
+  
+  
+    
+  /* Estilos para el botón de inicio de sesión */
+  .btn-primary{
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    color:#FFF;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    color:var(--secondary-color);
+    border-color: var(--secondary-color);
+    /* transition: all 1s ease; */
+
+}
+  
+.comision {
+background-color: rgba(0, 0, 255, .3);
+/* y si queremos colocar el color y la opacidad en hexa ? 
+255 * 0.3 = 76.5 >>> 77 que en hexa es 4D
+*/
+/* background-color: #0000ff4D; */
+position: fixed;
+width: 400px;
+padding: 5px 0;
+text-align: center;
+top: 80px;
+right: -75px;
+transform: rotate(45deg);
+}
+  
+main {
+    height: 800px;
+    background-color: #4d647c;
+}

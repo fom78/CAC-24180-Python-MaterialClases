@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <!-- logo y nombre sitio -->
+            <h1>CaC - Pelis</h1>
+            
+            <!-- menu de acciones -->
+
+            <ul>
+                <li>Tendencias</li>
+                <li>
+                    <!-- ruta relativa a mi archivo actual -->
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a 
+                    href="https://developer.themoviedb.org/docs"
+                    target="_blank"
+                    title="Ir a la pagina que me dara las pelis para este hermoso frontend"
+                    >
+                    API
+                </a>
+                </li>
+                <li>Iniciar sesion</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Registro!!!!!!</h1>
+            <form action="" method="get">
+                <div>
+                    <label for="firstName">Nombre</label>
+                    <input type="text" name="firstName" id="firstName" maxlength="12">
+                </div>
+                <div>
+                    <label for="lastName">Apellido</label>
+                    <input type="text" name="lastName" id="lastName" minlength="5">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="birthdate">Año de Nacimiento</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+                <div>
+                    <label for="country"></label>
+                    <select name="country" id="country">
+                        <option value="">Seleccione</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CH">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Perú</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                    </select>
+                </div>
+                <div>
+                    <!-- <input type="submit" value="Enviar"> -->
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+
+        <a href="#">Terminos y condiciones</a>
+        <a href="#">Preguntas Frecuentes</a>
+        <a href="#">Ayuda</a>
+
+    </footer>
+
+</body>
+</html>

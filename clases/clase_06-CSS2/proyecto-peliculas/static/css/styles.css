@@ -1,0 +1,44 @@
+/* selector universal */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* REGLA
+        selector {
+            propiedad1: valor;
+            propiedad2: valor;
+            .....
+            propiedadn: valor;
+        } */
+
+
+/* selector por elemento   */
+h2 {
+    color: green;
+}
+
+h1 {
+    color: cyan;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* selector por id */
+#banner {
+    background-image: url("../img/banner-bg.jpg"); /* Establece la imagen de fondo del elemento con el ID 'banner', especificada por la URL */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir completamente el área del elemento, manteniendo su relación de aspecto */
+    height: 300; /* Establece la altura del elemento con el ID 'banner' al 60% del ancho de la ventana gráfica */
+    background-position: center;
+}
+
+
+
+/* selector por clase */
+.primer-clase {
+    color:chartreuse;
+    font-size: 32px;
+}

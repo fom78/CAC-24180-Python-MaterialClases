@@ -1,0 +1,21 @@
+/* Estilos para la barra de navegación */
+nav {
+    overflow: hidden; /* Clearfix para contener los elementos flotados */
+  }
+  
+  /* Estilos para el logo */
+  #logo {
+    float: left; /* Flotar a la izquierda */
+  }
+
+  /* Estilos para los elementos del menú */
+  nav ul {
+    float: right; /* Flotar a la derecha */
+  }
+  
+  nav ul li {
+    display: inline; /* Mostrar los elementos en línea */
+    margin-left: 20px; /* Espaciado entre elementos del menú */
+    color: #fff; /* Color del texto del menú */
+  }
+

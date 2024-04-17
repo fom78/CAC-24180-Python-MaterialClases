@@ -1,0 +1,15 @@
+/* Estilos para la barra de navegación */
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Columna automática para el logo y resto del espacio para los elementos del menú */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: space-between;
+  }
+
+/* Estilos para los elementos del menú */
+nav ul {
+    justify-content: flex-end;
+    display: flex; /* Utilizar Flexbox */
+    list-style-type: none; /* Quitar estilos de la lista */
+    gap: 10px; /* Espacio entre elementos */
+  }

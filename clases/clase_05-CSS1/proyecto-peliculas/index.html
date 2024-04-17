@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaC - Movies!</title>
+    <link rel="cac-movie icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/styles.css">
+    <style>
+
+        main {
+            background-color: chocolate;
+        }
+        h1 {
+            /* font-size: 72px; */
+            color:red;
+        }
+/* REGLA
+        selector {
+            propiedad1: valor;
+            propiedad2: valor;
+            .....
+            propiedadn: valor;
+        } */
+
+    </style>
+</head>
+<body>
+    <!-- Navegacion y logo -->
+    
+    <header>
+        <nav>
+            <!-- logo y nombre sitio -->
+            <h1 style="color:blue;">CaC - Pelis!</h1>
+            <h1 style="color: #ff34a2;">Hola</h1>
+            <h1>24180</h1>
+            
+            <!-- menu de acciones -->
+
+            <ul>
+                <li style="font-size: 30px;">Tendencias</li>
+                <li>
+                    <!-- ruta relativa a mi archivo actual -->
+                    <a href="./templates/register.html">Registrarse</a>
+                </li>
+                <li>
+                    <a 
+                    href="https://developer.themoviedb.org/docs"
+                    target="_blank"
+                    title="Ir a la pagina que me dara las pelis para este hermoso frontend"
+                    class="primer-clase"
+                    >
+                    API
+                </a>
+                </li>
+                <li class="primer-clase">Iniciar sesion</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Mi parte principal -->
+    <main>
+        <!-- banner para publicidad o mostrar un buen poster y alguna info -->
+        <section id="banner">
+            <h1>Películas y series ilimitadas y mucho más.</h1>
+            <h3>
+                Disfruta donde quieras. Cancela cuando quieras.
+            </h3>
+        </section>
+        <!-- busqueda de pelis en la plataforma -->
+        <section id="search">
+            <!-- h2 por h1 y cambio de leyenda -->
+            <h2>¿Qué estas buscando?</h2>
+            <input type="text" placeholder="Ingrese nombre de peli a buscar ..." >
+        </section>
+        <!-- las tendencias -->
+        <section id="trending">
+            <h1 class="primer-clase">Las tendencias de hoy </h1>
+            <div>
+                <a href="./templates/detail-movie.html" target="_blank">
+                    <img src="./static/img/avengerInfinityWar.jpg" width="250" alt="Portada pelicula infinity .....">
+                </a>
+                <a href="./templates/detail-movie.html">
+                    <img src="./static/img/kunfuPanda4.jpg" width="250" alt="Kunfupanda">
+                </a>
+                <a href="./templates/detail-movie.html">
+                    <img src="./static/img/misionImposible.jpg" width="250" alt="Kunfupanda">
+                </a>
+                <a href="./templates/detail-movie.html">
+                    <img src="https://picsum.photos/200/300" width="250" alt="Kunfupanda">
+                </a>
+            </div>
+
+
+        </section>
+        <!-- pelis destacadas -->
+        <section id="top-rated">
+            <h1>Las mas aclamadas</h1>
+        </section>
+        
+        
+    
+    </main>
+    <!-- El pie de pagina con info importante -->
+    <footer>
+
+        <a href="#">Terminos y condiciones</a>
+        <a href="#">Preguntas Frecuentes</a>
+        <a href="#">Ayuda</a>
+
+    </footer>
+
+</body>
+</html>

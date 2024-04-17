@@ -1,0 +1,36 @@
+:root {
+
+    font-size: 32px;
+    font-family: Nunito, Georgia, 'Times New Roman', Times, serif
+}
+
+
+h1 {
+    font-size: 1.5rem;
+    color: #ad1b1b;
+}
+
+h2 {
+    font-size: 4vw;
+    color:brown;
+    font-family: Verdana, 'Verdana por siempre', Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+
+label {
+    font-size: .3rem;
+    color: gray;
+}
+
+.titulo-principal {
+    color: rgb(255,0,255);
+    font-size: 5vw;
+}
+
+.color-distinto {
+    color: red;
+}
+
+.relleno {
+    font-variation-settings:'FILL' 1
+}

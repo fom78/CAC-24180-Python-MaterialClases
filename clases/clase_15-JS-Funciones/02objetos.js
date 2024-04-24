@@ -14,7 +14,14 @@ let movie = {
     vote_average: 9.54
 }
 
+let movie2 = {
+    name : "Harry Potter 2",
+    status: "Release",
+    vote_average: 8.54,
+    duration: 160
+}
 
+console.log(movie2.name)
 
 
 

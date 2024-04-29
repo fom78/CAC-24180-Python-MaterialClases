@@ -1,6 +1,5 @@
 
 /*
-
 Un objeto es una colección de propiedades, donde cada propiedad tiene un nombre (también conocido como clave) y un valor asociado.
 Los objetos pueden contener propiedades que son variables, funciones o incluso otros objetos.
 Se pueden crear objetos de dos maneras: utilizando la sintaxis de objeto literal {} o utilizando el constructor new Object().
@@ -21,7 +20,9 @@ let movie2 = {
     duration: 160
 }
 
-console.log(movie2.name)
+console.log(movie2.vote_average)
+
+movie.director="Pepito"
 
 
 

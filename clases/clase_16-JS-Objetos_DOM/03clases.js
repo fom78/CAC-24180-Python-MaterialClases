@@ -7,8 +7,8 @@
 */
 
 class Movie{
-    constructor(titulo, mediaVotos, duracion,estado="Prep"){
-        this.title=titulo
+    constructor(title, mediaVotos, duracion=5,estado="Prep"){
+        this.title=title
         this.vote_average=mediaVotos
         this.runtime=duracion
         this.status= estado        
@@ -24,7 +24,7 @@ class Movie{
 
     viewGeneralResume(){
         console.log('Titulo: ',this.title)
-        console.log('duracion: ',this.runtime)
+        console.log('duración: ',this.runtime)
         console.log('Estado: ',this.status)
     }
 }
@@ -33,7 +33,9 @@ let movie2 = new Movie('El señor de los anillos 2',7.3,120,"Release")
 movie2.viewGeneralResume()
 
 let movie3 = new Movie('Batman',8.5,98)
+
+console.log(">>>>>>>>>>💚❤️",typeof(movie3))
 movie3.viewGeneralResume()
 
-movie2.play()
+console.log(movie2);
 

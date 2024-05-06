@@ -1,0 +1,11 @@
+.btn {
+    display: block;
+    margin: 10px;
+    background-color: blueviolet;
+    color: antiquewhite;
+}
+
+.btn:hover {
+    background-color: blue;
+    cursor: pointer;
+}

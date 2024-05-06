@@ -1,0 +1,18 @@
+:root {
+    font-size: 16px;
+}
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+.peli {
+    border: 2px solid rgb(32, 32, 32);
+    background-color: rgb(75, 73, 73);
+    color: white;
+    margin: .5rem 0;
+}
+
+.error {
+    background-color: red;
+}

@@ -61,7 +61,8 @@ const pelis =
         "nombre": "Acción",
         "id": 4
       }
-    ]
+    ],
+    "page": 3
   }`
 
 

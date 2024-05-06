@@ -5,14 +5,16 @@
 const boton = document.getElementById('mi-boton')
 console.log(boton);
 
-// const boton1 = document.getElementsByClassName('btn')
-// console.log(boton1);
-// const boton2 = document.getElementsByTagName('button')
-// console.log(boton2)
+const boton1 = document.getElementsByClassName('btn')
+console.log("boton1",boton1);
+const boton2 = document.querySelector('#mi-boton3')
+console.log("boton2",boton2)
 
 boton.addEventListener('click', function() {
     console.log('Se hizo clic en el botón')
 })
+
+boton2.addEventListener('click',hacerAlgo )
 
 function hacerAlgo() {
     console.log("Hola")

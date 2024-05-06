@@ -15,18 +15,21 @@ fetch devuelve una promesa que eventualmente se resolverá con el objeto Respons
 */
 
 // Hacer la solicitud HTTP para obtener el archivo JSON
-fetch('./data.json')
+const var1 = fetch('./data.json')
     .then(response => {
         // Verificar si la solicitud fue exitosa
         if (!response.ok) {
             // Lanzar un error si la solicitud no fue exitosa
             throw new Error('Error al leer el archivo JSON')
         }
+        console.log("❤️ 1")
         // Convertir la respuesta JSON en un objeto JavaScript
-        return response.json()
+        return response.json() // Da una promesa
+
     })
     .then(datos => {
         // Una vez que los datos se obtienen con éxito, llamar a la función mostrarDatos
+        console.log("❤️ 3")
         mostrarDatos(datos)
     })
     .catch(error => {
@@ -47,3 +50,8 @@ function mostrarDatos(datos) {
     `
 }
 
+console.log("❤️ 4")
+
+const suma = 3+6
+
+console.log(">>>>",var1);

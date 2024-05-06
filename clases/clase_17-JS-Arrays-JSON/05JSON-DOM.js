@@ -31,8 +31,8 @@ function mostrarDatos(datos) {
         // Crear un fragmento de HTML para cada conjunto de datos
         let elementoHTML =  `<div>
             <p>Nombre: ${datos[i].title}</p>
-            <p>Edad: ${datos[i].vote_average}</p>
-            <p>Ciudad: ${datos[i].poster_path}</p>
+            <p>Rating: ${datos[i].vote_average}</p>
+            <p>imagen: ${datos[i].poster_path}</p>
         </div>`;
         // Agregar el fragmento HTML al final del elemento 'resultado' en el DOM
         resultado.insertAdjacentHTML('beforeend', elementoHTML);

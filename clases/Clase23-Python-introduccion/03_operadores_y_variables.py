@@ -21,7 +21,7 @@ suma = a + b  # Suma
 resta = a - b  # Resta
 multiplicacion = a * b  # Multiplicación
 division = a / b  # División
-modulo = a % 2  # Módulo (resto de la división)
+modulo = a % 2  # Módulo (resto de la división) 7 % 3
 potencia = a ** 2  # Potencia
 
 print("Suma:", suma)
@@ -58,7 +58,7 @@ cadena = "Hola, Python"
 lista = [1, 2, 3, 4, 5]
 
 # Uso de `in`
-print("Python" in cadena)  # Devuelve True si "Python" está en la cadena
+print("oli" in "Hola")  # Devuelve True si "Python" está en la cadena
 print(3 in lista)  # Devuelve True si 3 está en la lista
 
 # Uso de `not in`

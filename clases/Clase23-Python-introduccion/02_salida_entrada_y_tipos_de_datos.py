@@ -10,13 +10,21 @@ print("Este es un mensaje en la pantalla")
 nombre = input("Ingresa tu nombre: ")
 print("Hola, " + nombre)
 
+edad = input("Dame tu edad ") # "45" str
+# Dinamicamente tipado
+edad = int(edad) # int
+edadEnDiezAnios = int(edad) + 10
+print("Tue edad en 10 años sera: ", edadEnDiezAnios)
+
+# print(2*9-7/8)
+
 # Tipos de datos
 # En Python, los tipos de datos más comunes son:
 # - Números enteros (int)
 # - Números flotantes (float)
 # - Texto (str)
 # - Booleanos (bool)
-
+"""
 # Ejemplos de tipos de datos:
 numero_entero = 10  # int
 numero_flotante = 3.14  # float
@@ -28,3 +36,4 @@ print("Número entero:", numero_entero, "de tipo", type(numero_entero))
 print("Número flotante:", numero_flotante, "de tipo", type(numero_flotante))
 print("Texto:", texto, "de tipo", type(texto))
 print("Booleano:", booleano, "de tipo", type(booleano))
+"""

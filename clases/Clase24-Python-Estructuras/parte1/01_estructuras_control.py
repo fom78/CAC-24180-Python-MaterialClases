@@ -21,10 +21,19 @@ if edad >= 18:
     print("Eres mayor de edad")
 
 # Sentencia if-else
-if edad >= 18:
+if edad >= 18 or edad == 3:
     print("Eres mayor de edad")
+
+
+
+    6*9
+
 else:
     print("Eres menor de edad")
+
+
+
+    3+9
 
 # Sentencia if-elif-else
 nota = 70
@@ -32,5 +41,7 @@ if nota >= 90:
     print("Sobresaliente")
 elif nota >= 70:
     print("Aprobado")
+elif nota >= 50:
+    print("Des")
 else:
     print("Reprobado")

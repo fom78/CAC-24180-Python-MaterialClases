@@ -20,6 +20,7 @@ print(numeros)  # Salida: [1, 2, 2.5, 3, 4, 5, 6]
 
 # Eliminar un elemento de la lista
 numeros.remove(2.5)
+numeros.pop(45)
 print(numeros)  # Salida: [1, 2, 3, 4, 5, 6]
 
 # Ordenar la lista

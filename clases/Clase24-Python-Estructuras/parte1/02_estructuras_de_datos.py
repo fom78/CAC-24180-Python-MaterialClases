@@ -2,13 +2,13 @@
 
 # Listas, Tuplas y Diccionarios
 # Estas son algunas de las estructuras de datos más utilizadas en Python para almacenar colecciones de elementos.
-
+"hjshsdfh"
 # Listas
 # Una lista es una colección ordenada y modificable. Permite elementos duplicados.
 # Se define utilizando corchetes [].
 
 # Ejemplo de lista
-frutas = ["manzana", "banana", "cereza"]
+frutas = ["manzana", "banana", "cereza", 67, True, True, False]
 
 # Accediendo a elementos de la lista
 print("Primera fruta:", frutas[0])  # Salida: manzana

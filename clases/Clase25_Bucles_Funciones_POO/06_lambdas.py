@@ -7,6 +7,7 @@
 # Definición de una función lambda
 suma = lambda x, y: x + y
 
+
 # Llamada a la función lambda
 resultado_lambda = suma(2, 3)
 print("La suma usando lambda es:", resultado_lambda)  # Salida: La suma usando lambda es: 5
@@ -15,7 +16,7 @@ print("La suma usando lambda es:", resultado_lambda)  # Salida: La suma usando l
 # Por ejemplo, con la función sorted()
 puntos = [(1, 2), (3, 1), (5, 0), (2, 4)]
 # Ordenar por la segunda coordenada
-puntos_ordenados = sorted(puntos, key=lambda punto: punto[1])
+puntos_ordenados = sorted(puntos, key=lambda punto: punto[1]) # punto (1, 2)
 print("Puntos ordenados por la segunda coordenada:", puntos_ordenados)  # Salida: [(5, 0), (3, 1), (1, 2), (2, 4)]
 
 movies = [
@@ -74,7 +75,7 @@ movies = [
 # Caso muy interesante de uso, para ordenar listas de diccionarios, por el valor de una clave.
 # Ordenar por release_year
 
-sorted_movies = sorted(movies, key=lambda x: (x['release_year']))
+sorted_movies = sorted(movies, key=lambda peli: (peli['release_year'])) # (1994, 1972, ....)
 
 # Mostrar la lista ordenada
 for movie in sorted_movies:

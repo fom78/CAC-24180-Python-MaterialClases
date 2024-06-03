@@ -18,8 +18,11 @@ def sumar(a, b):
     """
     Esta función recibe dos números como parámetros y devuelve su suma.
     """
-    return a + b
+    res = a+b
+    return res
 
+dd = (2,5,7)
+dd2 = 2,5,7
 # Llamada a la función con argumentos
 resultado = sumar(3, 4)
 print("La suma es:", resultado)  # Salida: La suma es: 7

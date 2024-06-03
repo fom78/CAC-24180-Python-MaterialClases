@@ -1,4 +1,4 @@
-def multiplicar(a, b):
+def multiplicar(a, b=0):
     """
     Esta función recibe dos números como parámetros y devuelve su producto.
     
@@ -12,10 +12,10 @@ def multiplicar(a, b):
     return a * b
 
 # Llamada a la función multiplicar
-resultado = multiplicar(5, 4)
+resultado = multiplicar(5,89)
 print("El producto es:", resultado)  # Salida: El producto es: 20
 
-
+cantidad = len("Hola")
 # Función para agregar una película
 def agregar_pelicula(titulo, release_year, es_adulto=False):
     """

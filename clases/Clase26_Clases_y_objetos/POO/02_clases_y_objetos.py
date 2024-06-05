@@ -11,7 +11,7 @@ class Movie:
         self.title = title           
         self.release_year = release_year  
         self.adult = adult
-        Movie.total_movies += 1
+        Movie.total_movies =Movie.total_movies + 1
 
     def obtener_titulo(self):
         # Este método devuelve el valor del atributo title de la instancia.
@@ -24,6 +24,10 @@ movie2 = Movie("Toy Story", 1995, adult=False)
 # Acceder a atributos de instancia
 print("Título:", movie1.title)  # Salida: Título: Inception
 print("Año de estreno:", movie2.release_year)  # Salida: Año de estreno: 1995
+
+
+movie3 = Movie("Toy Story 2", 1999, adult=False)
+
 
 # Acceder a atributos de clase
 print("Total de películas:", Movie.total_movies)  # Salida: Total de películas: 2
